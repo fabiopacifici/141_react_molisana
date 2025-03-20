@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Common */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root
+{
+  --mol-primary: #b8dae4;
+  --mol-dark: #060708;
+  --mol-light: #f0f0f0;
+
+}
+
+body
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Utilities */
+.text-center
+{
+  text-align: center;
+}
+
+.list-unstyled
+{
+  list-style: none;
+}
+
+/* Header */
+
+header
+{
+  padding-bottom: 2rem;
+
+
+  nav#menu
+  {
+    margin-top: 2rem;
+
+    ul
+    {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      gap: 1rem;
+
+      a
+      {
+        display: inline-block;
+        color: var(--mol-dark);
+        text-decoration: none;
+        padding: 0.5rem 0.75rem;
+
+        &.active
+        {
+          background-color: var(--mol-primary);
+        }
+
+
+      }
+    }
+  }
+
+
+}
+
+
+/* Main */
+
+main
+{
+  min-height: 50vh;
+  background-image: url('/background.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer styles */
+footer
+{
+
+  background-image: url('/mountains.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  line-height: 1.5rem;
+
+
+  .flex-container
+  {
+
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+
+
+    .col
+    {
+      width: calc(100% / 3);
+    }
+
+
+  }
+
+
+  h3
+  {
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+
+  a
+  {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--mol-dark);
+    font-weight: 400;
+  }
+
+
+
+}
