@@ -1,3 +1,5 @@
+import Logo from './Logo'
+
 export default function Header() {
 
   {/*
@@ -8,20 +10,17 @@ export default function Header() {
 
   return (
     <header className="text-center">
-      <img src="/logo.png" alt="" />
-
+      <Logo />
       <nav id="menu">
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="" className="active">Prodotti</a></li>
           <li><a href="">Chi siamo</a></li>
           <li><a href="">Contatti</a></li>
-
         </ul>
       </nav>
     </header>
   )
-
 
 
 }

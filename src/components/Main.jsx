@@ -1,4 +1,4 @@
-import Button from './Button/Button.jsx';
+import ProductsList from "./ProductsList"
 export default function Main() {
 
   // logic here
@@ -8,9 +8,7 @@ export default function Main() {
   return (
 
     <main>
-      <h1>Main</h1>
-      <Button />
-      <button className='btn'>Clic here</button>
+      <ProductsList />
     </main>
   )
 }

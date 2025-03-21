@@ -1,3 +1,5 @@
+import Logo from './Logo'
+
 export default function Footer() {
 
   // logic here
@@ -9,7 +11,7 @@ export default function Footer() {
 
       <div className="flex-container">
         <div className="col">
-          <img src="/logo.png" alt="" />
+          <Logo slogan='La pasta buona buona' />
         </div>
         <div className="col">
           <h3>Pastificio</h3>
