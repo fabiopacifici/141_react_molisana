@@ -1,5 +1,6 @@
 import ProductsList from "./ProductsList"
-export default function Main() {
+
+export default function Main({ products }) {
 
   // logic here
 
@@ -8,7 +9,7 @@ export default function Main() {
   return (
 
     <main>
-      <ProductsList />
+      <ProductsList products={products} />
     </main>
   )
 }

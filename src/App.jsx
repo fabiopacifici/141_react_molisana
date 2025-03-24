@@ -4,38 +4,13 @@ import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
 import Alert from './components/Alert'
+import alertMessage from './data/alerts'
+import menuLinks from './data/mainMenu'
+import products from './data/productsList'
+
+
 
 function App() {
-
-  const alertMessage = { text: "Goodmorning folks", type: "info", title: "Welcome!" }
-
-  const menuLinks = [
-    {
-      id: 1,
-      name: "Home",
-      url: "#",
-      active: false
-    },
-    {
-      id: 2,
-      name: "Prodotti",
-      url: "#",
-      active: true
-    },
-    {
-      id: 3,
-      name: "Chi siamo",
-      url: "#",
-      active: false
-    },
-    {
-      id: 4,
-      name: "Contatti",
-      url: "#",
-      active: false
-    },
-
-  ]
   //const list = ['<li>React</li>', '<li>Vite</li>', '<li>ESLint</li>', '<li>Prettier</li>', '<li>Stylelint</li>']
   /* const list = ['React', 'Vite', 'ESLint', 'Prettier', 'Stylelint'] */
 
@@ -60,7 +35,7 @@ function App() {
         <p>{alertMessage.text}</p>
       </Alert>
 
-      <Main />
+      <Main products={products} />
       <Footer />
 
     </>
