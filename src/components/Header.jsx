@@ -1,6 +1,7 @@
 import Logo from './Logo'
+import Nav from './Nav'
 
-export default function Header() {
+export default function Header({ menuLinks }) {
 
   {/*
     Inline styles are not recommended, but you can use them if you want
@@ -11,16 +12,8 @@ export default function Header() {
   return (
     <header className="text-center">
       <Logo />
-      <nav id="menu">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="" className="active">Prodotti</a></li>
-          <li><a href="">Chi siamo</a></li>
-          <li><a href="">Contatti</a></li>
-        </ul>
-      </nav>
+      <Nav menuLinks={menuLinks} />
     </header>
   )
-
-
 }
+
