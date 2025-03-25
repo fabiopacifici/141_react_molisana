@@ -129,9 +129,6 @@ main
 {
   min-height: 50vh;
   background-image: url('/background.jpg');
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Footer styles */
